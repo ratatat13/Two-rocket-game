@@ -45,13 +45,6 @@ while running:
     if keys[K_RIGHT] and x < WIDTH - 80:
         x += speed
 
-    keys = pygame.key.get_pressed()
-    if keys[K_a] and x > 0:
-        x -= speed
-    if keys[K_d] and x < WIDTH - 80:
-        x += speed
-
-    
 screen.blit(spaceship_yellow, (x, y))
 screen.blit(spaceship_red, (x,y))
 pygame.display.update()
